@@ -1,0 +1,63 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(https://cdn.pixabay.com/photo/2020/01/17/02/37/cat-4772133_1280.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  color: aliceblue;
+}
+.container {
+  margin: 0 auto;
+}
+.header {
+  background-color: rgba(49, 55, 55, 0.932);
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.main {
+  align-items: center;
+  background-color: rgba(49, 55, 55, 0.932);
+  max-width: 620px;
+  margin: 0 auto;
+}
+.form {
+  padding: 32px 80px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.form-group input {
+  border-radius: 4px;
+  outline: none;
+  padding-left: 10px;
+  height: 26px;
+}
+.input-radio, .input-checkbox{
+  width: 20px;
+  margin-right: 8px;
+}
+.form-group label {
+  display: flex;
+  align-items: center;
+}
+.form-group select {
+  height: 30px;
+  padding-left: 10px;
+}
+.textarea {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.button {
+  width: 150px;
+  height: 30px;
+  background-color: #889ac8;
+  border: transparent;
+  color: aliceblue;
+}
+.button:hover {
+  border: 2px solid aliceblue;
+}
+

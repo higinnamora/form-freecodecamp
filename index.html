@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario de Michis Programadores</title>
+</head>
+
+<body>
+  <header class="header container">
+    <h1 id="title">Formulario de Michis Programadores</h1>
+    <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
+  </header>
+  <main class="main container">
+    <form action="" class="form" id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nombre</label>
+        <input type="text" id="name" placeholder="Michi nombre" minlength="5" maxlength="40" pattern="[A-Za-z0-9]+"
+          required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="text" id="email-label" placeholder="Michi email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Edad</label>
+        <input type="number" id="number-label" placeholder="Michi edad" pattern="Edad" required min="18" max="80">
+      </div>
+      <div class="form-group">
+        <label id="name-label" for="role">Qué cargo tienes actualmente?</label>
+        <select name="role" id="dropdown" required>
+          <option value="Estudiante">Estudiante</option>
+          <option value="Independiente">Independiente</option>
+          <option value="Vago">Vago</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Recomendarías Michis Programadores a un amigo?</p>
+        <label id="number-label">
+          <input type="radio" class="input-radio" required>
+          Definitivamente
+        </label>
+        <label for="">
+          <input type="radio" class="input-radio" required>
+          Tal vez
+        </label>
+        <label for="">
+          <input type="radio" class="input-radio" required>
+          Nunca
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Te gusta ser parte de?</p>
+        <select name="role" id="dropdown" required>
+          <option disabled selected value="">Selecciona</option>
+          <option value="Proyectos">Proyectos</option>
+          <option value="Retos">Retos</option>
+          <option value="Comunidad">Comunidad</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Qué te gustaría ver mejorado?</p>
+        <label for="">
+          <input class="input-checkbox" value="front-end" type="checkbox">
+          Front-end Projects
+        </label>
+        <label for="">
+          <input class="input-checkbox" value="challenges" type="checkbox">
+          Challenges
+        </label>
+        <label for="">
+          <input class="input-checkbox" value="foro" type="checkbox">
+          Foro</label>
+      </div>
+      <div class="form-group">
+        <p>Tienes algún comentario?</p>
+        <textarea class="textarea" name="comment" id="comments" cols="30" rows="10"
+          placeholder="Escribe tus comentarios..."></textarea>
+      </div>
+      <div class="form-group submit-button">
+        <button class="button" id="submit" type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
